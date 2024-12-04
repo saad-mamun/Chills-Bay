@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import HeroArea from './Components/HeroArea';
 import Image from './Components/Image';
 import ThingsCard from './Components/ThingsCard';
+import ChillsBay from './Components/ChillsBay';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <HeroArea/>
       <Image/>
       <ThingsCard/>
+      <ChillsBay/>
     </>
   )
 }
