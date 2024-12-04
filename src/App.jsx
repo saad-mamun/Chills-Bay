@@ -6,6 +6,7 @@ import HeroArea from './Components/HeroArea';
 import Image from './Components/Image';
 import ThingsCard from './Components/ThingsCard';
 import ChillsBay from './Components/ChillsBay';
+import MyCarousel from './Components/Carousel';
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
       <Image/>
       <ThingsCard/>
       <ChillsBay/>
+      <MyCarousel/>
+    
     </>
   )
 }
