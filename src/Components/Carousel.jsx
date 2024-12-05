@@ -65,7 +65,7 @@ function MyCarousel() {
     }
     const handleNext = () => {
         setCurrentIndex((prevIndex) => (
-            prevIndex ===  SliderData.length - 1 ? 0 : prevIndex + 1
+            prevIndex === SliderData.length - 1 ? 0 : prevIndex + 1
         ))
     }
 
@@ -126,12 +126,11 @@ function MyCarousel() {
                 </div>
 
                 <div className='flex justify-center items-center gap-2 mt-6'>
-                    {SliderData.map((_, index)=> (
-                        <button onClick={()=> handleDotClick(index)} className={`w-3 h-3 rounded-full ${
-                            index === currentIndex 
-                            ? "bg-black" 
-                            : "bg-gray-200"
-                        }`}>
+                    {SliderData.map((_, index) => (
+                        <button key={index} onClick={() => handleDotClick(index)} className={`w-3 h-3 rounded-full ${index === currentIndex
+                                ? "bg-black"
+                                : "bg-gray-200"
+                            }`}>
 
                         </button>
                     ))}

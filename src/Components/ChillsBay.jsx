@@ -27,9 +27,9 @@ function ChillsBay() {
     return (
         <section>
             <div className='mt-10'>
-                <h1 className='text-[#26395C] text-2xl md:text-[30px] lg:text-[42px] font-bold text-center mb-3'>Why Use Chillsbay?</h1>
+                <h1 className='text-[#26395C] text-2xl md:text-[30px] lg:text-[42px] font-bold text-center mb-6'>Why Use Chillsbay?</h1>
                 <div className='bg-[#189EFF0F]'>
-                    <div className='w-[60%] container mx-auto flex flex-col lg:flex-row items-center justify-between'>
+                    <div className='w-[60%] container mx-auto flex flex-col lg:flex-row items-center justify-between lg:pt-7 lg:pb-5'>
                         {
                             cards.map((card, index) => (
                                 <div key={index} className='flex flex-col  items-center text-center max-w-[318px] mt-10'>
