@@ -1,13 +1,12 @@
+
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-
-function MyCarousel() {
-
+function DrinkCarousel() {
     const SliderData = [
         {
             id: 1,
-            imgSrc: "image/Slider1.png",
-            heading: "Wizkid made in lagos tour",
+            imgSrc: "image/DrinkCarousel.png",
+            heading: "GTCO Food and Drink Festival 2022: Africa’s Biggest Food and Drink Festival",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
         },
         {
@@ -71,7 +70,6 @@ function MyCarousel() {
 
     return (
         <section className='overflow-hidden p-8'>
-            <h1 className='text-center text-2xl lg:text-5xl text-[#26395C] mt-24 mb-12 font-semibold'>See How People are Chilling On Chillsbay</h1>
 
             <div className='relative w-full max-w-screen-2xl mx-auto'>
 
@@ -85,12 +83,12 @@ function MyCarousel() {
 
                     <div className='flex flex-col lg:flex-row items-center gap-6 w-full px-12'>
                         <div className='max-w-[612px] lg:W-1/2'>
-                            <h3 className='text-2xl text-[#26395C] font-semibold lg:mx-10 text-center lg:text-start'>Upcoming events this weekend</h3>
+                            <h3 className='text-2xl text-[#26395C] font-semibold lg:mx-10 text-center lg:text-start'>Upcoming Eat & Drink Events</h3>
                             <img className='object-cover w-full h-auto' src={currentSlider.imgSrc} alt="" />
                         </div>
 
                         <div className='w-full lg:w-1/2 flex flex-col gap-4'>
-                            <h1 className='text-2xl lg:text-5xl font-bold lg:w-[70%] leading-tight'>{currentSlider.heading}</h1>
+                            <h1 className='text-2xl lg:text-4xl font-bold lg:w-[80%] leading-tight'>{currentSlider.heading}</h1>
                             <p className='text-gray-700 lg:w-[70%] text-xl'>{currentSlider.desc}</p>
 
                             <div className='grid grid-cols-2 lg:w-[60%]'>
@@ -140,4 +138,4 @@ function MyCarousel() {
     )
 }
 
-export default MyCarousel
+export default DrinkCarousel

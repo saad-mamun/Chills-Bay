@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Button } from 'antd'
 function HeroArea() {
     return (
         <section className="bg-[url('image/Hero.png')] bg-cover bg-no-repeat overflow-hidden mx-auto w-full h-[636px]" >
@@ -38,9 +38,9 @@ function HeroArea() {
                             </select>
                         </div>
                     </div>
-                    <button className='bg-[#0E8BFF] py-[9px] px-[28px] text-white rounded-[8px]  w-[268px] sm:w-[174px]'>
-                        Search
-                    </button>
+                    <div>
+                        <Button type='primary'>Search</Button>
+                    </div>
                 </div>
             </div>
         </section>
