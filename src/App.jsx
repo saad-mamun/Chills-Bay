@@ -23,7 +23,6 @@ function App() {
           <Route path='/club' element={ <Club/> } />
           <Route path='/cart' element={ <Payment/> } />
           <Route path='/contact' element={ <Contact/> } />
-
         </Routes>
         <Footer />
       </Router>
